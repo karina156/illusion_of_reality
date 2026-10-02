@@ -1,0 +1,34 @@
+/* =========================
+   TRANSFORM / OPACITY
+========================= */
+
+.circle-image,
+.avatar,
+.white-wash,
+.screen-panel,
+.screen-person,
+.screen-person__avatar {
+  will-change: transform, opacity;
+}
+
+/* =========================
+   TRANSFORM / OPACITY / BLUR
+========================= */
+
+.intro__title,
+.screen-panel__title,
+.screen-panel__subtitle {
+  will-change: transform, opacity, filter;
+}
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+  }
+}
